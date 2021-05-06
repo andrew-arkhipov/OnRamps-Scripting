@@ -7,6 +7,7 @@ __pycache__/
 *.so
 
 .DS_Store
+__init__.pyc
 
 # Distribution / packaging
 .Python

@@ -236,13 +236,13 @@ except:
     print("Sorry, student menu button not found!")
 ```
 
-This piece of code uses Python's `try`/`except` syntax, which should always be used to handle exceptions thrown in the case that `WebDriverWait` does not find what it's looking for. If you do not put the `WebDriverWait` code inside a `try`/`except` block and it's unable to find the element you're looking for, the script will crash and have to be rerun. `WebDriverWait` accepts two arguments: the `driver` object itself that we worked with before, and an amount of time to wait before throwing an exception (in this case it's 10 seconds). This is followed by the `until` method, which accepts a  single (but complex) argument. Let's break it down.
+This piece of code uses Python's `try`/`except` syntax, which should almost always be used to handle exceptions thrown in the case that `WebDriverWait` does not find what it's looking for. If you do not put the `WebDriverWait` code inside a `try`/`except` block and it's unable to find the element you're looking for, the script will crash and have to be rerun. `WebDriverWait` accepts two arguments: the `driver` object itself that we worked with before, and an amount of time to wait before throwing an exception (in this case it's 10 seconds). This is followed by the `until` method, which accepts a  single (but complex) argument. Let's break it down.
 
 `EC` is an object that has a ton of different methods which do exactly what they sound like. In this case, `WebDriverWait` is being told by `EC` to wait for the element that is being searched for to be clickable. How are we searching for the element? By XPath! 
 
-Notice that the argument provided to the `element_to_be_clickable` method is a single Python tuple (hence the second set of parentheses), where the first element of the tuple is `By.XPATH`, and the second is the actual XPath string. This will be the form of what you provide as an argument to the `EC` methods 99% of the time, so simply copying and pasting this line and simply changing the XPath and perhaps the `EC` method will be more than enough. The only other `EC` methods I've used are `presence_of_element_located` and `frame_to_be_available_and_switch_to_it`, the latter of which is useful for SpeedGrader.
+Notice that the argument provided to the `element_to_be_clickable` method is a single Python tuple (hence the second set of parentheses), where the first element of the tuple is `By.XPATH`, and the second is the actual XPath string. This will be the form of what you provide as an argument to the `EC` methods 99% of the time, so simply copying and pasting this line and changing the XPath (and perhaps the `EC` method)will be more than enough. The only other `EC` methods I've used are `presence_of_element_located` and `frame_to_be_available_and_switch_to_it`, the latter of which is useful for SpeedGrader. Furthermore, the `By.XPATH` can be replaced with something of the form `By.<html-attribute-in-caps>` (e.g. `By.ID`), but considering I've only discussed XPath strings, just stick with `By.XPATH` when starting out.
 
-Just like the `driver`, `WebDriverWait` returns the `WebElement` object that it found. So just like the button, the object can be stored in a variable, or other `WebElement` methods such as `click` can be chained onto it to perform multiple actions. 
+Just like the `driver`, `WebDriverWait` returns the `WebElement` object that it found. So like the button example, the object can be stored in a variable, or other `WebElement` methods such as `click` can be chained onto it to perform multiple actions. 
 
 <br>
 <br>
@@ -268,5 +268,6 @@ def function(arg1, arg2, ...):
     ...
     return return_item
 ```
-
 This should be enough to explain what each function is doing, but if not, Google is your friend. :)
+
+I've also added a `src` folder that contains all the scripts I've written for OnRamps. Please use these as a reference, but don't feel overwhelmed by the amount of content in them. I promise that with practice, you will be able to write better scripts than mine in no time. 

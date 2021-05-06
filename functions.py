@@ -89,6 +89,6 @@ def get_college_course_links(driver, url, first_page=1, last_page=19):
     # the actual code that uses the above helper functions
     course_links = []
     for page in range(first_page, last_page + 1):
-        course_links.extend(self._parse_page(driver, f"{url}page={str(page)}"))
+        course_links.extend(_parse_page(driver, f"{url}page={str(page)}"))
 
     return course_links
