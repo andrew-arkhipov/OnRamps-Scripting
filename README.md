@@ -244,6 +244,8 @@ Notice that the argument provided to the `element_to_be_clickable` method is a s
 
 Just like the `driver`, `WebDriverWait` returns the `WebElement` object that it found. So like the button example, the object can be stored in a variable, or other `WebElement` methods such as `click` can be chained onto it to perform multiple actions. 
 
+For further reading, [here](https://selenium-python.readthedocs.io/waits.html) are the docs for `WebDriverWait`.
+
 <br>
 <br>
 

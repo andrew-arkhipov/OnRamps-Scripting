@@ -124,13 +124,15 @@ def test():
 
 
 def main():
-    url = "https://onramps.instructure.com/accounts/172690?"
+    url = "https://onramps.instructure.com/accounts/172690?" # college algebra
 
     driver = Driver.initialize()
     login(driver, url)
 
     course = CollegeCourse()
-    links = course.get_links(driver, url, range(2, 3))
+
+    # bad code, the range shouldn't be hard coded, can be adapted for any subject
+    links = course.get_links(driver, url, range(1, 7))
 
     # run
     for link in links:
