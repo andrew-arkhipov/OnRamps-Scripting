@@ -249,9 +249,7 @@ Just like the `driver`, `WebDriverWait` returns the `WebElement` object that it 
 
 ## Conclusion
 
-Believe it or not, this really covers most of what you'll need to write effective scripts. The rest of it comes from knowing how to use Python correctly, which is outside of the scope of what I'm teaching here, though it's very easy to pick up in a matter of days. At the time of writing this, I'm in my final weeks of my time at OnRamps and getting ready to move to Chicago, but I'm always happy to answer any questions you may have regarding writing scripts. Please reach out to Mark Townsend,  Emily Jensen, or Jeremiah Lucas for my email address if needed.
-
-I've provided many examples of functions you can simply copy and paste into your scripts so that you don't have to reinvent the wheel. The way I've written the functions is similar to how `WebDriverWait` works: your `driver` object will be the first argument, and then the rest will be based on the requirements of what you're trying to accomplish. The descriptions of the arguments required are provided in the docstrings of each function with the following format:
+I've provided some examples of functions in `functions.py` that you can simply copy and paste into your scripts so that you don't have to reinvent the wheel. The way I've written the functions is similar to how `WebDriverWait` works: your `driver` object will be the first argument, and then the rest will be based on the requirements of what you're trying to accomplish. The descriptions of the arguments required are provided in the docstrings of each function with the following format:
 
 ```
 def function(arg1, arg2, ...):
@@ -270,4 +268,6 @@ def function(arg1, arg2, ...):
 ```
 This should be enough to explain what each function is doing, but if not, Google is your friend. :)
 
-I've also added a `src` folder that contains all the scripts I've written for OnRamps. Please use these as a reference, but don't feel overwhelmed by the amount of content in them. I promise that with practice, you will be able to write better scripts than mine in no time. 
+I've also added a `src` folder that contains all the scripts I've written for OnRamps. A lot of the scripting you'll end up doing has probably has some sort of component that I've already written, so just copy and paste them into your script and change whatever needs changing. Please also use these as a reference for learning, but don't feel overwhelmed by the amount of content in them. I promise that with practice, you will be able to write better scripts than mine in no time. 
+
+Believe it or not, this really covers most of what you'll need to write effective scripts. The rest of it comes from knowing how to use Python correctly, which is outside of the scope of what I'm teaching here, though it's very easy to pick up in a matter of days. At the time of writing this, I'm in my final weeks of my time at OnRamps and getting ready to move to Chicago, but I'm always happy to answer any questions you may have regarding writing scripts. Please reach out to Mark Townsend,  Emily Jensen, or Jeremiah Lucas for my email address if needed.
